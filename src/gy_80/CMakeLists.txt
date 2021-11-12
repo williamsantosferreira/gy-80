@@ -205,8 +205,8 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(gy80 src/gy80.cpp)
-target_link_libraries(gy80 ${catkin_LIBRARIES} -lwiringPi)
+#add_executable(gy80 src/gy80.cpp)
+#target_link_libraries(gy80 ${catkin_LIBRARIES} -lwiringPi)
 
 add_executable(print src/print.cpp)
 target_link_libraries(print ${catkin_LIBRARIES})

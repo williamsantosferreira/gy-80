@@ -132,29 +132,18 @@ void GY80::read_accel(){ //
 	device.ax = (float(read_data(accel,DATAX0))/256.0);
 	device.ay = (float(read_data(accel,DATAY0))/256.0);
 	device.az = (float(read_data(accel,DATAZ0))/256.0);	
-
-	std::cout<<"AX = "<<device.ax<<"\nAY = "<<device.ay<<"\nAZ = "<<device.az<<"\n"<<std::endl;
 }
 
 void GY80::read_gyro(){ // rad/s
 	device.gx = (float(read_data(gyro,OUT_X_H))*pi/45000.0);
 	device.gy = (float(read_data(gyro,OUT_Y_H))*pi/45000.0);
-	device.gz = (float(read_data(gyro,OUT_Z_H))*pi/45000.0);
-
-	std::cout<<"GX = "<<device.gx<<"\nGY = "<<device.gy<<"\nGZ = "<<device.gz<<"\n"<<std::endl;
-
+	device.gz = (float(read_data(gyro,OUT_Z_H))*pi/45000.0);	
 }
 
 void GY80::read_mag(){
-	//device.mx = (float(read_data(gyro,MAG_X_H)));
-	//device.my = (float(read_data(gyro,MAG_Y_H)));
-	//device.mz = (float(read_data(gyro,MAG_Z_H)));
-
-		device.mx = wiringPiI2CReadReg16(mag,MAG_X_H);
-		device.my = wiringPiI2CReadReg16(mag,MAG_Y_H);
-		device.mz = wiringPiI2CReadReg16(mag,MAG_Z_H);
-
- std::cout<<"MX = "<<device.mx<<"\nMY = "<<device.my<<"\nMZ = "<<device.mz<<"\n"<<std::endl;
+	device.mx = wiringPiI2CReadReg16(mag,MAG_X_H);
+	device.my = wiringPiI2CReadReg16(mag,MAG_Y_H);
+	device.mz = wiringPiI2CReadReg16(mag,MAG_Z_H);
 }
 
 float GY80::read_ax(){
@@ -192,28 +181,4 @@ float GY80::read_my(){
 float GY80::read_mz(){
 	return device.mz;	
 }
-
-int main(int argc, char **argv){
-	GY80 sensor;	
-	std_msgs::String msg;
-	std::stringstream ss;
-
-	ros::init(argc,argv,"gy80");
-
-	ros::NodeHandle n;
-
-	ros::Publisher pub = n.advertise<std_msgs::String>("accel_data",1000);
-
-	ros::Rate freq(10);
-
-	while(ros::ok()){
-		sensor.read_accel();		
-
-
-		freq.sleep();
-	
-	}
-	return 0;
-}
-
 

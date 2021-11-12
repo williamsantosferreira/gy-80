@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-gy_80/CMakeFiles/print.dir/rule:
-	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/print.dir/rule
-.PHONY : gy_80/CMakeFiles/print.dir/rule
-
-# Convenience name for target.
-print: gy_80/CMakeFiles/print.dir/rule
-
-.PHONY : print
-
-# fast build rule for target.
-print/fast:
-	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/build
-.PHONY : print/fast
-
-# Convenience name for target.
 gy_80/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
 	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : gy_80/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
@@ -408,46 +393,19 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-gy_80/CMakeFiles/gy80.dir/rule:
-	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/gy80.dir/rule
-.PHONY : gy_80/CMakeFiles/gy80.dir/rule
+gy_80/CMakeFiles/print.dir/rule:
+	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/print.dir/rule
+.PHONY : gy_80/CMakeFiles/print.dir/rule
 
 # Convenience name for target.
-gy80: gy_80/CMakeFiles/gy80.dir/rule
+print: gy_80/CMakeFiles/print.dir/rule
 
-.PHONY : gy80
+.PHONY : print
 
 # fast build rule for target.
-gy80/fast:
-	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/gy80.dir/build.make gy_80/CMakeFiles/gy80.dir/build
-.PHONY : gy80/fast
-
-src/gy80.o: src/gy80.cpp.o
-
-.PHONY : src/gy80.o
-
-# target to build an object file
-src/gy80.cpp.o:
-	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/gy80.dir/build.make gy_80/CMakeFiles/gy80.dir/src/gy80.cpp.o
-.PHONY : src/gy80.cpp.o
-
-src/gy80.i: src/gy80.cpp.i
-
-.PHONY : src/gy80.i
-
-# target to preprocess a source file
-src/gy80.cpp.i:
-	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/gy80.dir/build.make gy_80/CMakeFiles/gy80.dir/src/gy80.cpp.i
-.PHONY : src/gy80.cpp.i
-
-src/gy80.s: src/gy80.cpp.s
-
-.PHONY : src/gy80.s
-
-# target to generate assembly for a file
-src/gy80.cpp.s:
-	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/gy80.dir/build.make gy_80/CMakeFiles/gy80.dir/src/gy80.cpp.s
-.PHONY : src/gy80.cpp.s
+print/fast:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/build
+.PHONY : print/fast
 
 src/print.o: src/print.cpp.o
 
@@ -488,7 +446,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... print"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -505,10 +462,7 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... gy80"
-	@echo "... src/gy80.o"
-	@echo "... src/gy80.i"
-	@echo "... src/gy80.s"
+	@echo "... print"
 	@echo "... src/print.o"
 	@echo "... src/print.i"
 	@echo "... src/print.s"

@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = '/home/pi/gpar-robot-ros/devel;/home/pi/ros_catkin_extra/devel;/home/pi/workspace/devel;/opt/ros/melodic'.split(';')
+            CMAKE_PREFIX_PATH = '/home/pi/gy-80/devel;/home/pi/gpar-robot-ros/devel;/home/pi/ros_catkin_extra/devel;/opt/ros/melodic'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

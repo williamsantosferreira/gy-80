@@ -415,12 +415,10 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 
 # Convenience name for "all" pass in the directory.
 gy_80/all: gy_80/CMakeFiles/print.dir/all
-gy_80/all: gy_80/CMakeFiles/gy80.dir/all
 
 .PHONY : gy_80/all
 
 # Convenience name for "clean" pass in the directory.
-gy_80/clean: gy_80/CMakeFiles/print.dir/clean
 gy_80/clean: gy_80/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 gy_80/clean: gy_80/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 gy_80/clean: gy_80/CMakeFiles/roscpp_generate_messages_py.dir/clean
@@ -436,7 +434,7 @@ gy_80/clean: gy_80/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 gy_80/clean: gy_80/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 gy_80/clean: gy_80/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 gy_80/clean: gy_80/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-gy_80/clean: gy_80/CMakeFiles/gy80.dir/clean
+gy_80/clean: gy_80/CMakeFiles/print.dir/clean
 
 .PHONY : gy_80/clean
 
@@ -444,43 +442,6 @@ gy_80/clean: gy_80/CMakeFiles/gy80.dir/clean
 gy_80/preinstall:
 
 .PHONY : gy_80/preinstall
-
-#=============================================================================
-# Target rules for target gy_80/CMakeFiles/print.dir
-
-# All Build rule for target.
-gy_80/CMakeFiles/print.dir/all:
-	$(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/depend
-	$(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/gy-80/build/CMakeFiles --progress-num=11,12 "Built target print"
-.PHONY : gy_80/CMakeFiles/print.dir/all
-
-# Include target in all.
-all: gy_80/CMakeFiles/print.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-gy_80/CMakeFiles/print.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/gy-80/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/print.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/gy-80/build/CMakeFiles 0
-.PHONY : gy_80/CMakeFiles/print.dir/rule
-
-# Convenience name for target.
-print: gy_80/CMakeFiles/print.dir/rule
-
-.PHONY : print
-
-# clean rule for target.
-gy_80/CMakeFiles/print.dir/clean:
-	$(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/clean
-.PHONY : gy_80/CMakeFiles/print.dir/clean
-
-# clean rule for target.
-clean: gy_80/CMakeFiles/print.dir/clean
-
-.PHONY : clean
 
 #=============================================================================
 # Target rules for target gy_80/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
@@ -963,39 +924,39 @@ clean: gy_80/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target gy_80/CMakeFiles/gy80.dir
+# Target rules for target gy_80/CMakeFiles/print.dir
 
 # All Build rule for target.
-gy_80/CMakeFiles/gy80.dir/all:
-	$(MAKE) -f gy_80/CMakeFiles/gy80.dir/build.make gy_80/CMakeFiles/gy80.dir/depend
-	$(MAKE) -f gy_80/CMakeFiles/gy80.dir/build.make gy_80/CMakeFiles/gy80.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/gy-80/build/CMakeFiles --progress-num=9,10 "Built target gy80"
-.PHONY : gy_80/CMakeFiles/gy80.dir/all
+gy_80/CMakeFiles/print.dir/all:
+	$(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/depend
+	$(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/gy-80/build/CMakeFiles --progress-num=9,10 "Built target print"
+.PHONY : gy_80/CMakeFiles/print.dir/all
 
 # Include target in all.
-all: gy_80/CMakeFiles/gy80.dir/all
+all: gy_80/CMakeFiles/print.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-gy_80/CMakeFiles/gy80.dir/rule: cmake_check_build_system
+gy_80/CMakeFiles/print.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/gy-80/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/gy80.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/print.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/gy-80/build/CMakeFiles 0
-.PHONY : gy_80/CMakeFiles/gy80.dir/rule
+.PHONY : gy_80/CMakeFiles/print.dir/rule
 
 # Convenience name for target.
-gy80: gy_80/CMakeFiles/gy80.dir/rule
+print: gy_80/CMakeFiles/print.dir/rule
 
-.PHONY : gy80
-
-# clean rule for target.
-gy_80/CMakeFiles/gy80.dir/clean:
-	$(MAKE) -f gy_80/CMakeFiles/gy80.dir/build.make gy_80/CMakeFiles/gy80.dir/clean
-.PHONY : gy_80/CMakeFiles/gy80.dir/clean
+.PHONY : print
 
 # clean rule for target.
-clean: gy_80/CMakeFiles/gy80.dir/clean
+gy_80/CMakeFiles/print.dir/clean:
+	$(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/clean
+.PHONY : gy_80/CMakeFiles/print.dir/clean
+
+# clean rule for target.
+clean: gy_80/CMakeFiles/print.dir/clean
 
 .PHONY : clean
 

@@ -41,7 +41,6 @@
 /home/pi/gy-80/build/gy_80/CMakeFiles/rebuild_cache.dir
 /home/pi/gy-80/build/gy_80/CMakeFiles/edit_cache.dir
 /home/pi/gy-80/build/gy_80/CMakeFiles/test.dir
-/home/pi/gy-80/build/gy_80/CMakeFiles/print.dir
 /home/pi/gy-80/build/gy_80/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 /home/pi/gy-80/build/gy_80/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 /home/pi/gy-80/build/gy_80/CMakeFiles/roscpp_generate_messages_py.dir
@@ -58,4 +57,4 @@
 /home/pi/gy-80/build/gy_80/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/pi/gy-80/build/gy_80/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 /home/pi/gy-80/build/gy_80/CMakeFiles/std_msgs_generate_messages_eus.dir
-/home/pi/gy-80/build/gy_80/CMakeFiles/gy80.dir
+/home/pi/gy-80/build/gy_80/CMakeFiles/print.dir

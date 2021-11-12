@@ -285,19 +285,6 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named print
-
-# Build rule for target.
-print: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 print
-.PHONY : print
-
-# fast build rule for target.
-print/fast:
-	$(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/build
-.PHONY : print/fast
-
-#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -493,17 +480,17 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named gy80
+# Target rules for targets named print
 
 # Build rule for target.
-gy80: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gy80
-.PHONY : gy80
+print: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 print
+.PHONY : print
 
 # fast build rule for target.
-gy80/fast:
-	$(MAKE) -f gy_80/CMakeFiles/gy80.dir/build.make gy_80/CMakeFiles/gy80.dir/build
-.PHONY : gy80/fast
+print/fast:
+	$(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/build
+.PHONY : print/fast
 
 # Help Target
 help:
@@ -527,7 +514,6 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... print"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -543,7 +529,7 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... gy80"
+	@echo "... print"
 .PHONY : help
 
 
