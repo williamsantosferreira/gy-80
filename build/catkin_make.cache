@@ -1,2 +1,2 @@
-
--DCATKIN_DEVEL_PREFIX=/home/william/Área de Trabalho/Pasta Geral/ROS/gy-80/devel -DCMAKE_INSTALL_PREFIX=/home/william/Área de Trabalho/Pasta Geral/ROS/gy-80/install -G Unix Makefiles
+gy_80
+-DCATKIN_DEVEL_PREFIX=/home/pi/gy-80/devel -DCMAKE_INSTALL_PREFIX=/home/pi/gy-80/install -G Unix Makefiles
