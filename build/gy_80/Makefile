@@ -168,6 +168,66 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+gy_80/CMakeFiles/print.dir/rule:
+	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/print.dir/rule
+.PHONY : gy_80/CMakeFiles/print.dir/rule
+
+# Convenience name for target.
+print: gy_80/CMakeFiles/print.dir/rule
+
+.PHONY : print
+
+# fast build rule for target.
+print/fast:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/build
+.PHONY : print/fast
+
+# Convenience name for target.
+gy_80/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : gy_80/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: gy_80/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make gy_80/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+gy_80/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : gy_80/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: gy_80/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make gy_80/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+gy_80/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : gy_80/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: gy_80/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make gy_80/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 gy_80/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
 	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : gy_80/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
@@ -303,6 +363,21 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+gy_80/CMakeFiles/imu_send.dir/rule:
+	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/imu_send.dir/rule
+.PHONY : gy_80/CMakeFiles/imu_send.dir/rule
+
+# Convenience name for target.
+imu_send: gy_80/CMakeFiles/imu_send.dir/rule
+
+.PHONY : imu_send
+
+# fast build rule for target.
+imu_send/fast:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/imu_send.dir/build.make gy_80/CMakeFiles/imu_send.dir/build
+.PHONY : imu_send/fast
+
+# Convenience name for target.
 gy_80/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
 	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : gy_80/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
@@ -316,6 +391,21 @@ std_msgs_generate_messages_cpp: gy_80/CMakeFiles/std_msgs_generate_messages_cpp.
 std_msgs_generate_messages_cpp/fast:
 	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make gy_80/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+gy_80/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : gy_80/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: gy_80/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make gy_80/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 gy_80/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
@@ -363,6 +453,21 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+gy_80/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : gy_80/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: gy_80/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make gy_80/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
 gy_80/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : gy_80/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
@@ -392,20 +497,32 @@ std_msgs_generate_messages_eus/fast:
 	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make gy_80/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
-# Convenience name for target.
-gy_80/CMakeFiles/print.dir/rule:
-	cd /home/pi/gy-80/build && $(MAKE) -f CMakeFiles/Makefile2 gy_80/CMakeFiles/print.dir/rule
-.PHONY : gy_80/CMakeFiles/print.dir/rule
+src/imu_send.o: src/imu_send.cpp.o
 
-# Convenience name for target.
-print: gy_80/CMakeFiles/print.dir/rule
+.PHONY : src/imu_send.o
 
-.PHONY : print
+# target to build an object file
+src/imu_send.cpp.o:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/imu_send.dir/build.make gy_80/CMakeFiles/imu_send.dir/src/imu_send.cpp.o
+.PHONY : src/imu_send.cpp.o
 
-# fast build rule for target.
-print/fast:
-	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/print.dir/build.make gy_80/CMakeFiles/print.dir/build
-.PHONY : print/fast
+src/imu_send.i: src/imu_send.cpp.i
+
+.PHONY : src/imu_send.i
+
+# target to preprocess a source file
+src/imu_send.cpp.i:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/imu_send.dir/build.make gy_80/CMakeFiles/imu_send.dir/src/imu_send.cpp.i
+.PHONY : src/imu_send.cpp.i
+
+src/imu_send.s: src/imu_send.cpp.s
+
+.PHONY : src/imu_send.s
+
+# target to generate assembly for a file
+src/imu_send.cpp.s:
+	cd /home/pi/gy-80/build && $(MAKE) -f gy_80/CMakeFiles/imu_send.dir/build.make gy_80/CMakeFiles/imu_send.dir/src/imu_send.cpp.s
+.PHONY : src/imu_send.cpp.s
 
 src/print.o: src/print.cpp.o
 
@@ -446,6 +563,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... print"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -456,13 +577,18 @@ help:
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... install"
+	@echo "... imu_send"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... print"
+	@echo "... src/imu_send.o"
+	@echo "... src/imu_send.i"
+	@echo "... src/imu_send.s"
 	@echo "... src/print.o"
 	@echo "... src/print.i"
 	@echo "... src/print.s"

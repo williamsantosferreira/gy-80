@@ -16,11 +16,21 @@
 #define Temp_Address 0x77 //BMP085
 
 //accelerometer 
+#define BW_RATE 0x2C
+#define BW_RATE_800HZ 0x0E
+#define BW_RATE_400HZ 0x0D
+#define BW_RATE_200HZ 0x0C
+#define BW_RATE_100HZ 0x0B
+#define BW_RATE_50HZ  0x0A
+#define BW_RATE_25HZ  0x09
+#define RANGE_2G  0x00
+#define RANGE_4G  0x01
+#define RANGE_8G  0x02
+#define RANGE_16G 0x03
 #define POWER_CTL 0x2D
 #define DATAX0 0x33 
 #define DATAY0 0X35
 #define DATAZ0 0x37
-
 
 //gyroscope
 #define CTRL_REG1 0x20
@@ -46,6 +56,13 @@
 #define MAG_Y_L 0x08
 #define MAG_Z_H 0x05
 #define MAG_Z_L 0x06
+#define DATARATE_75HZ 0b110
+#define DATARATE_30HZ 0b101
+#define DATARATE_15HZ 0b100  // Default
+#define DATARATE_7_5HZ 0b011
+#define DATARATE_3HZ 0b010
+#define DATARATE_1_5HZ 0b001
+#define DATARATE_0_75_HZ 0b000
 
 //temperature and pressure?
 
@@ -74,6 +91,7 @@ class GY80{
 		int mag;
 	public:
 		GY80(){
+			std::cout<<"Starting GY80..."<<std::endl;
 			int value;
 			
 			//Devices Configuration
@@ -83,6 +101,7 @@ class GY80{
 
 			//Accel Registers Configuration
 			wiringPiI2CWriteReg8 (accel, POWER_CTL, 8);
+			wiringPiI2CWriteReg8 (accel, BW_RATE,BW_RATE_100HZ);
 
 			//Gyro Registers Configuration
 			wiringPiI2CWriteReg8 (gyro, CTRL_REG1, 0b00001111);
@@ -110,10 +129,13 @@ class GY80{
 
 			wiringPiI2CWriteReg8(mag, REG_CONFIG_A, value);
 
+			std::cout<<"Ready to read data!"<<std::endl;
+
 		}
 		void read_accel();
 		void read_gyro();
 		void read_mag();
+		void read();
 
 		float read_ax();
 		float read_ay();
@@ -126,15 +148,16 @@ class GY80{
 		float read_mx();
 		float read_my();
 		float read_mz();
+
 };
 
-void GY80::read_accel(){ //
+void GY80::read_accel(){ 
 	device.ax = (float(read_data(accel,DATAX0))/256.0);
 	device.ay = (float(read_data(accel,DATAY0))/256.0);
 	device.az = (float(read_data(accel,DATAZ0))/256.0);	
 }
 
-void GY80::read_gyro(){ // rad/s
+void GY80::read_gyro(){
 	device.gx = (float(read_data(gyro,OUT_X_H))*pi/45000.0);
 	device.gy = (float(read_data(gyro,OUT_Y_H))*pi/45000.0);
 	device.gz = (float(read_data(gyro,OUT_Z_H))*pi/45000.0);	
@@ -144,6 +167,12 @@ void GY80::read_mag(){
 	device.mx = wiringPiI2CReadReg16(mag,MAG_X_H);
 	device.my = wiringPiI2CReadReg16(mag,MAG_Y_H);
 	device.mz = wiringPiI2CReadReg16(mag,MAG_Z_H);
+}
+
+void GY80::read(){
+	read_accel();
+	read_gyro();
+	//read_mag();
 }
 
 float GY80::read_ax(){
@@ -181,4 +210,18 @@ float GY80::read_my(){
 float GY80::read_mz(){
 	return device.mz;	
 }
+
+/*
+Change mag frequency
+void HMC5883L::setDataRate(dataRate_t dataRate)
+{
+	int value;
+	
+	value = readReg8(REG_CONFIG_A);
+	value &= 0b11100011;
+	value |= (dataRate << 2);
+
+	writeReg8(REG_CONFIG_A, value);
+}
+*/
 

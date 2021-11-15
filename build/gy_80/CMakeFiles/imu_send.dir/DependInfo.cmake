@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/gy-80/src/gy_80/src/print.cpp" "/home/pi/gy-80/build/gy_80/CMakeFiles/print.dir/src/print.cpp.o"
+  "/home/pi/gy-80/src/gy_80/src/imu_send.cpp" "/home/pi/gy-80/build/gy_80/CMakeFiles/imu_send.dir/src/imu_send.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

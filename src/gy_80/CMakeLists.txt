@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -205,9 +206,10 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-#add_executable(gy80 src/gy80.cpp)
-#target_link_libraries(gy80 ${catkin_LIBRARIES} -lwiringPi)
 
 add_executable(print src/print.cpp)
 target_link_libraries(print ${catkin_LIBRARIES})
+
+add_executable(imu_send src/imu_send.cpp)
+target_link_libraries(imu_send ${catkin_LIBRARIES} -lwiringPi)
 
