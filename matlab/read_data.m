@@ -30,5 +30,15 @@ while(i<=size)
     i = i+1;
 end
 
+choose = input('Would you like to save this data? Y or N: ','s');
+
+if(choose == 'y'|| choose == 'Y')
+    matriz_mpu = [accx accy accz gyrox gyroy gyroz];
+    nome = input('Digite o nome do arquivo: ','s');
+    
+    nome = strcat(nome,'.csv');
+    
+    csvwrite(nome,matriz_mpu);
+end
 
 
